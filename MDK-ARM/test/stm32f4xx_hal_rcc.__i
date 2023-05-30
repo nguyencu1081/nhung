@@ -1,0 +1,6 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-D__EVAL -D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -w -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../MDK-ARM
+-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+-D__UVISION_VERSION="538" -DSTM32F405xx -DUSE_HAL_DRIVER -DSTM32F405xx
+-o test/stm32f4xx_hal_rcc.o -MD "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
